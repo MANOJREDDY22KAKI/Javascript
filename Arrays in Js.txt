@@ -1,0 +1,61 @@
+Arrays in Js
+
+.concat() method is used to create a new array by combinig two arrays,it will not alter the original array.
+
+.constructor() returns the function that created the array prototype.
+
+.copyWithin(targetindex,start_index,end_index) method copies array elements to another position in an array.
+
+.every() takes a call back function used to check for the required condition. it return True/False; it does not change the original array
+
+.fill() method  fills specified elements in the array with a value
+syntax: fill(value,start,end); this method overwrites the original array
+
+
+.filter() takes a call back function  and return a new array filled with elements that pass the test provided,it doesnot change the original array.
+
+.find() takes a callback function and return the values the first element that pass the test.it executes a function for each array element and it does not change the original array.
+
+
+.findIndex() method takes a callback function for each array element and returns the index of the first element that passes a test,it does not change the original array.
+
+.findLast() it is similar to the .find() method.,but it gives the last  element that satisfies the condition.
+
+.findLastIndex() it is similar to the .findIndex() ,but it gives the last index of element that satisfies the condition.
+
+.flat() method is used to flat the array,it return the new array,it does not alter the original array.
+
+.includes() return true/false if array contains specified value     .includes(element)
+
+.indexOf(element) returns the first index of the specified value
+
+.join('seperator') method returns an array as a string ,it does not change the original array
+
+.map() takes a callback function and returns a new array from calling a function for every array element,does not change the original array
+
+The Array.of() method creates a new array from any number of arguments.
+
+The Array.of() method can take any type of arguments.
+
+.reverse() method revers the order of the elements in an array.overwirtes the original array.
+
+.shift() used to remove the first element in  original array  and returns the shifted element
+
+.slice(start,end) method returns selected elements in an array as a new array and does not change the original array.
+
+.some() is converse of the .every() method
+ 
+.sort() method overwrites the original array,it sorts the array according to the strings .to sort the numbers using .sort() method a compare function method should be used .
+
+splice() method is used to add or remove the elements  changing the original array     array.splice(index, count, item1, ....., itemX) count is for no.of elements to be add or delete.
+
+.toReversed() method reverses the order of the elements in an array ,return a new array,doesnot change the original array
+.
+
+.unshift() method overwrites the original array by adding  the element at the beginning
+
+The with() method updates a specified array element.
+
+The with() method returns a new array.
+
+The with() method does not change the original array.

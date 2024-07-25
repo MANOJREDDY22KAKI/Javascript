@@ -1,0 +1,6 @@
+cosnt date = new Date() = >  gives the  current date and time 
+
+date.getDate() = > returns  A number	The day of the month (1 to 31).
+date.getDay() =>return index(0-6)  of the week(week = ["Monday","Tuesday",......"Saturday"])
+date.getFullYear() =>return the full year of the date
+
