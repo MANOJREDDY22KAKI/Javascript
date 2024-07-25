@@ -1,0 +1,35 @@
+git config --global user.name "uesrname"  {is used to config the name.}
+git config --gloabal user.email "email" { is used to config the username.}
+
+git config --list {is used to get details of the user.}
+
+ls {is used to get all the files from the git directory}
+
+ls -Hidden/a {is used to get all the Hidden files in the directory.}
+
+git add <filename>{ is used to add or changed files in your working directory to the git staging area}
+
+git commit -m "somemsg"{ is the  record the change}
+
+git push origin main {git push origin main, you are instructing Git to push your changes from your local main branch to the remote repository named origin. }
+
+
+git push -u origin main {after using this command we need not write the  git push origin main ,instead git push}
+
+git branch {used to check in which branch we are in}
+
+git checkout <branch name > {to navigate }
+
+git checkout -b <new branch name> {to create new brach}
+
+git branch -d <branch name> { to delete branch }
+
+git push origin branchname {used to push the file to the particular branch}
+
+on new branch we have all the files that are in the main branch.
+
+git pull origin main {used to fetch and download content from a remote repo and immediately update the local repo to match that content}
+
+Fork is used to copy the others project to  our github .
+
+
