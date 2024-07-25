@@ -1,0 +1,112 @@
+javascript
+
+if the value of "this " keyword is undefined or null then it will be replaced with globalObject , this will happen only in non-strict mode this-substitution will happen.
+
+async/await always return a promise. these are used to handle promises.
+
+await Is used infornt of a promise that need to be resolved.
+
+=> why async/await is more prioritized than normal promises ? 
+	when we use a normal promise I wil  go other statements for compilation.
+	when we use async/await it will wait at await() till promise is resolved,then only engine will move to other statements for compilation.
+
+fetch() => will give Response object => is a readable stream , now we can convert the readable stream to json using .json(response);
+then we can see the data/result (note: .json() is a promise)
+
+ASYNC is a keyword used with the function. and await can be used only inside a async function
+
+CALL STACK
+	
+
+
+js is synchronous single-threaded language
+
+every thing in js happens inside an 'execution context'.
+assume execution context is like a big box which has 2 components  ,one has memory component also know as variable environment and other has code.. 
+in first component we have key : values ,functions
+
+
+let and const declarations are Hoisted.
+
+Block is a group of statements, it will wrap all the statements in to  a single statement
+let and cost are block scop.
+
+{
+var a = 10;
+let b = 2;
+const c =22;
+
+console.log(a);
+console.log(b);
+console.log(c);
+}
+
+console.log(a); //a can be accessed here .
+console.log(b); // b can't accessed here becoz it is block scope
+console.log(c);//similar as above statement
+
+****Temporal Dead Zone ***************
+First Class Functions
+
+
+setTimeout(function () {
+console.log("Timer");
+},5000);
+
+function x(y) {
+console.log("x");
+y();
+}
+x(function y(){
+console.log("Y");
+});
+
+nested functions in python:
+
+def area(radi):
+    return 2*3.14*radi*radi
+
+def circumference(radi):
+    return 2 * 3.14 *radi
+
+def diameter(radi):
+    return 2 * radi;
+
+def calculate(radius,logic):
+    output = []
+    for i in range(len(radius)):
+        output.append(logic(radius[i]))
+    return output
+
+radius = [2,3,4]
+print(calculate(radius,area));
+print(calculate(radius,circumference));
+print(calculate(radius,diameter));
+
+
+the above python code in js
+function area(radi) {
+    return 2 * 3.14 * radi * radi;
+}
+
+function circumference(radi) {
+    return 2 * 3.14 * radi;
+}
+
+function diameter(radi) {
+    return 2 * radi;
+}
+
+function calculate(radius, logic) {
+    let output = [];
+    for (let i = 0; i < radius.length; i++) {
+        output.push(logic(radius[i]));
+    }
+    return output;
+}
+
+let radius = [2, 3, 4];
+console.log(calculate(radius, area));
+console.log(calculate(radius, circumference));
+console.log(calculate(radius, diameter));
+
