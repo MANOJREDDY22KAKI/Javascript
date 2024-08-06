@@ -115,7 +115,9 @@ console.log(calculate(radius, diameter));
 To execute something in the browser we have a call stack,if something come in to  it ,it will quickly execute all the stuff in them, browser different types of superpowers (getting geolocation,Bluetooth ,etc) to access these supeerpowers we hafe webAPI's
 
 webAPI's : setTimeout(),console.log(),Location,Fetch ,DOM API's localStorage etc
+ 
 
+ **************EventLoop****************************
 we have callback queue , microtask queue in browsers 
 
 all the callback functions which are come from promises will go into microtask queue . microtask queue has highest priority than callback queue.

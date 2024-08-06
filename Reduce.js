@@ -9,9 +9,7 @@ const arr = [
   
   //filtering the no of person whose age > 20
   //output : {30:2,}
-  
-  // const arr = people.filter((x)=>x.age>20)
-  // console.log(arr)
+
 
   const count = arr.reduce((result,person)=>{
       if(result[person.age]){

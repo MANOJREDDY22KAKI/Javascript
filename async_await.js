@@ -37,3 +37,19 @@ const processOrder = async (items) => {
 };
 
 processOrder(items);
+
+
+async function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function main() {
+  console.log('Start');
+  await delay(2000); // Wait for 2 seconds
+  console.log('After 2 seconds');
+  await delay(1000); // Wait for 1 second
+  console.log('After 3 seconds total');
+}
+
+main();
+
