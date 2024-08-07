@@ -17,6 +17,14 @@ const obj = {
     }
 };
 
+const keys = Object.keys(obj)
+
+let ans = keys.filter((key)=>obj[key].cost>0)
+                .map((key)=>obj[key].cost * obj[key].amount)
+                .reduce((res,acc)=>res+acc,0)
+
+                console.log(ans)
+
 // const keys = Object.keys(obj)
 // console.log(keys)
 // const filter_Objects = keys.filter((key)=>obj[key].cost > 0)
