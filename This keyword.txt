@@ -1,0 +1,51 @@
+This keyword
+
+'this' represents  window object in global space
+
+if a function is made as a part of the object, then it is called method
+
+Call apply bind methods
+
+const standardRoom = {
+    rate: 100,
+    calculatePrice: function(nights, discount) {
+        return (this.rate * nights) * (1 - discount);
+    }
+};
+
+const deluxeRoom = {
+    rate: 200
+};
+
+const totalPrice = standardRoom.calculatePrice.call(deluxeRoom, 3, 0.1);
+console.log(`Total Price (Deluxe Room): $${totalPrice}`);
+
+const presidentialSuite = {
+    rate: 500
+};
+
+const calculatePresidentialPrice = standardRoom.calculatePrice.bind(presidentialSuite, 7, 0.2);
+
+const totalPricePresidential = calculatePresidentialPrice();
+console.log(`Total Price (Presidential Suite): $${totalPricePresidential}`);
+
+const suiteRoom = {
+    rate: 300
+};
+
+const args = [5, 0.15];
+const totalPriceSuite = standardRoom.calculatePrice.apply(suiteRoom, args);
+console.log(`Total Price (Suite Room): $${totalPriceSuite}`);
+
+
+3. Using bind
+Scenario: We want to create a new function that always calculates the price for a Presidential Suite with a fixed discount, regardless of how or where it’s called later.
+
+Explanation: The bind method creates a new function with the this value bound to presidentialSuite and the parameters for nights and discount pre-set. This function can be invoked later with no need to pass those arguments again.
+
+
+this keyword in arrow function : Enclosing lexical context
+
+
+This KeyWord in DOM : this inside DOM reference to HTML Element.
+ 

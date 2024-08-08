@@ -4,24 +4,31 @@ console.log("Using arrow function");
 
 const createOrder = (items, proceedToPayment) => {
   console.log("Items in the cart are", items);
-  proceedToPayment(paymentCompleted);
+  proceedToPayment();
 }
 
-const proceedToPayment = (paymentCompleted) => {
+const proceedToPayment = (callback) => {
   console.log("Payment Processing");
-  paymentCompleted(OrderWillbeDeliveredSoon);
+  callback();
 }
 
-const paymentCompleted = (OrderWillbeDeliveredSoon) => {
+const paymentCompleted = (callback) => {
   console.log("Payment Completed");
-  OrderWillbeDeliveredSoon();
+  callback();
 }
 
 const OrderWillbeDeliveredSoon = () => {
   console.log("Order Will be Delivered Soon");
 }
 
-createOrder(items, proceedToPayment);
+createOrder(items, ()=>{
+    proceedToPayment(()=>{
+        paymentCompleted( ()=>{
+            OrderWillbeDeliveredSoon
+            
+        })
+    })
+});
 
 console.log('\n')
 
