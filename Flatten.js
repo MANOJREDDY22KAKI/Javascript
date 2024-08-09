@@ -1,3 +1,17 @@
+// GET DEPTH OF THE ARRAY
+
+function getDepth(NESTED){
+    if(!Array.isArray(NESTED)) return 0;
+    maxi = 0;
+    for(item of NESTED){
+        maxi = Math.max(maxi,getDepth(item))
+    }
+    return maxi+1 ;
+}
+
+let NESTED = [1,2,3,[4,5,6],[7,8,[9,10,[11,[11,11,[12],[12,[13]]]],12],[13,14,15]]]
+console.log(getDepth(NESTED))
+
 function flaten(arr){
     
     for(let i =0 ;i<arr.length ;i++){
