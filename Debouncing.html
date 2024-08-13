@@ -24,12 +24,14 @@
       const btnPress = document.getElementById('btnPressed');
       const count = document.getElementById('buttonTrigger');
 
-      const incrementTriggerCount = () => {
+      const  debounce = _.debounce(()=>{
+        count.innerHTML = ++triggercnt;
+      },1000,{ 'maxWait': 1000 })
+
+      const throttle = _.throttle(() => {
         count.innerHTML = ++triggercnt;
         
-      };
-
-      const debounce = _.debounce(incrementTriggerCount, 1000,{ 'maxWait': 1000 });
+      }, 1000);
 
       btn.addEventListener('click', () => {
         
