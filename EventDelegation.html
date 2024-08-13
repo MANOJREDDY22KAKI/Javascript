@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        li{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <input type="text" id="name"  data-uppercase>
+        <input type="text" id="pan" data-uppercase>
+        <input type="text" id="mobile" data-uppercase>
+    </div>
+    <script>
+        document.querySelector("#form").addEventListener('input',(e)=>{
+            console.log(e.target.id) 
+            if(e.target.dataset.uppercase!=undefined){
+                e.target.value = e.target.value.toUpperCase();
+            }
+            
+            
+        })
+    </script>
+    
+</body>
+</html>

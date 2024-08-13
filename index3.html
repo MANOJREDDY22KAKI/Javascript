@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing</title>
+</head>
+<body>
+    <div id="Grandparent" style="border: 2px solid blue;padding: 200px; height: 100px;">
+        <div id="parent" style="border: 2px solid red; padding: 100px;height: 50px;">
+            <div id="child" style="border: 2px solid #3A1078;height: 50px; padding: 10px;">child element</div>
+            parent element
+        </div>
+        Grandparent
+    </div>
+    <script>
+        document.querySelector("#Grandparent")
+        .addEventListener("click",()=>{
+            console.log("Grandparent clicked")
+        },true)
+        document.querySelector("#parent")
+        .addEventListener("click",()=>{
+            console.log("parent clicked")
+        },false)
+        document.querySelector("#child")
+        .addEventListener("click",()=>{
+            console.log("child clicked")
+            
+        },true)
+    </script>
+    
+</body>
+</html>
