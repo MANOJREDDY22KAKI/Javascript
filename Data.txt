@@ -1,0 +1,45 @@
+Data Engineering Road Map
+
+1. Learn SQL
+
+>Basics(GeeksforGeeks) | 🔗 -> https://www.geeksforgeeks.org/sql/sql-tutorial/
+>Window's function(Ashutosh Kumar) | 🔗 -> https://www.youtube.com/playlist?list=PLbTF1OfX62c3RQ_ZFfyNBWVPdz_OWTMLG
+>Practice(LeetCode) | 🔗 ->   https://leetcode.com/studyplan/top-sql-50/
+>Practice(DataLemur 🐵 (Ace the SQL & Data Interview) | 🔗 -> https://datalemur.com/questions
+
+2. Learn Programming(Python recommended)
+
+>Basics(GeeksforGeeks) | 🔗 -> https://www.geeksforgeeks.org/python/python-programming-language-tutorial/
+>Medium(Manish Kumar) | 🔗-> https://www.youtube.com/playlist?list=PLTsNSGeIpGnEpkKQfQuOWmT85Pvsx1BWY
+>Practice | 🔗 DSA-> https://leetcode.com/studyplan/leetcode-75/
+
+3. Spark
+
+>Basics(Raja's Data Engineering) | 🔗 ->https://www.youtube.com/playlist?list=PLgPb8HXOGtsQeiFz1y9dcLuXjRh8teQtw
+>Databricks(Subham Khandelwal) | 🔗 -> https://www.youtube.com/playlist?list=PL2IsFZBGM_IGiAvVZWAEKX8gg1ItnxEEb
+>Practice | 🔗 ->  https://www.machinelearningplus.com/pyspark/pyspark-exercises-101-pyspark-exercises-for-data-analysis/
+
+4. Cloud
+
+>ADF (Maheer Basha Shaik) | 🔗 -> https://www.youtube.com/playlist?list=PLMWaZteqtEaLTJffbbBzVOv9C0otal1FO
+>Udemy Course (Ramesh Retnasamy) | 🔗-> https://www.udemy.com/course/learn-azure-data-factory-from-scratch/?couponCode=LOCLZDOFFPINCTRL
+
+5. Data Modelling
+
+> Manish Kumar | 🔗->  https://www.youtube.com/playlist?list=PLTsNSGeIpGnGP8A74Ie1PgqHhewsqD3fv
+> YT Playlist | 🔗 ->  https://www.youtube.com/playlist?list=PLNFyyGG_pKeTbkpKYbInC9LHhSNYsurag
+
+6. Projects (End to End Projects)
+
+> Ankur Ranjan |🔗 ->  https://www.youtube.com/watch?v=BlWS4foN9cY&t=114s&ab_channel=TheBigDataShow
+> Sagar Prajapati |🔗 ->https://www.geekcoders.co.in/courses/Build-End-to-End-Azure-Data-Engineering-Project-644fba73e4b0a1072ff43a72-644fba73e4b0a1072ff43a72
+
+7. Miscellaneous Topics
+
+>Airflow(Marc Lamberti) | 🔗->  https://www.youtube.com/playlist?list=PLwFJcsJ61oujAqYpMp1kdUBcPG0sE0QMT
+>Linux(Technical Guftgu) | 🔗->  https://www.youtube.com/playlist?list=PLs6fXmvkiaOZ8nxj58aLzRPPGO-oKKuQk
+>Version-Control(Hitesh Choudhary) | 🔗 ->  https://www.youtube.com/watch?v=zTjRZNkhiEU&ab_channel=freeCodeCamp.org
+>Azure DevOps | 🔗 ->  https://www.youtube.com/playlist?list=PLl4APkPHzsUXseJO1a03CtfRDzr2hivbD
+
+https://chatgpt.com/c/684d8b26-b37c-8008-8717-834a7673008e
+
